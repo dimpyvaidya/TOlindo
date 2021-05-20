@@ -21,6 +21,7 @@ html {
 body {
     /* background: #eee; */
     -webkit-font-smoothing: antialiased;
+    max-width: 100%;
     overflow-x: hidden;
 }
 html,

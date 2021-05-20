@@ -127,7 +127,7 @@ export class MainPage extends React.Component {
 
     render() {
         return (
-            <div>
+            <div id="main-page">
                 <TOlindoHeader />
                 <MainHero />
                 <MainKindList

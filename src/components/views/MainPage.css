@@ -1,2 +1,7 @@
+#main-page {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
 @media (min-width: 1024px) {
 }

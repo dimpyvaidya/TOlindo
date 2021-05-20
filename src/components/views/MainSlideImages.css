@@ -13,7 +13,7 @@
 
 .section-slide-images-container img {
     width: 50%;
-    flex-shrink: 0;
+    object-fit: contain;
 }
 
 .section-slide-images-heading {
