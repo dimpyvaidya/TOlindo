@@ -20,7 +20,7 @@ export class MainCardList extends React.Component {
                                 <figure
                                     className="section-cardlist-list-item-image"
                                     style={{
-                                        backgroundImage: `url(${item.image})`,
+                                        backgroundImage: `url(./${item.image})`,
                                     }}
                                 ></figure>
                                 <div className="section-cardlist-list-item-content">
