@@ -1,0 +1,108 @@
+{
+    "customer" : [
+        {
+            "group": "Customer",
+            "faq": [
+                {
+                    "q": "What is TOlindo?",
+                    "a": "TOlindo is a Toronto based technology company dedicated to providing Courier, E-Commerce and Delivery services. Our goals : to connect customers with local businesses whether it’s a small flower shop around the corner or your favourite Korean restaurant, provide safe and reliable courier and delivery services within Downtown Toronto in the fastest way possible – all through one mobile app. TOlindo is a one-stop shop, your neighborhood in your pocket."
+                },
+                {
+                    "q": "Where and when can I use TOlindo?",
+                    "a": "TOlindo delivery and courier services are available typically from 8 AM to 6PM, 7 days a week within the Downtown Toronto area. We offer a 30-minute delivery guarantee, on-demand and same day delivery services. Our scheduled delivery option is available for you to receive your package the same day, or the following day the latest! To view a map of our service areas, go to the app’s navigation menu. Tap “About”, then tap “Delivery Areas”."
+                },
+                {
+                    "q": "What is the TOlindo 30-minute guarantee?",
+                    "a": "TOlindo may provide a 30-minute or free delivery guarantee. This guarantee is subject to the following conditions: The guarantee is from the moment the TOlindo courier picks up the package until drop-off, not from when the order is received; please visit our website section operation area for more details. TOlindo’s courier guaranteed delivery schedule must state that the destination point qualifies for the service commitment from the origin point;"
+                },
+                {
+                    "q": "Who is eligible to use the TOlindo mobile app?",
+                    "a": "You must be at least eighteen (18) years old to use the TOlindo mobile app."
+                },
+                {
+                    "q": "How are payments made for my orders?",
+                    "a": "TOlindo will charge the payment method you specify (either Wallet or Credit Card) at the time of purchase or checkout."
+                },
+                {
+                    "q": "What are TOlindo’s guidelines for handling deliveries during this Covid-19 Pandemic?",
+                    "a": "TOlindo is committed to ensuring the health and safety of its drivers and customers. Our safety standards follow the Ontario and Public Health Recommendations which include: All drivers must wear a face covering or mask during pick-up and drop-off of packages. All drivers are required to wash or sanitize their hands before every pickup and after drop-off of packages. Both drivers and customers must have taken specific actions to prioritize both parties’            health and safety, like wearing a face covering or mask, sanitizing hands and to maintain a 2-metre distance when a physical interaction cannot be avoided.No matter what, we value the health and safety of our community. We highly recommend customers to: Track your goods and the delivery status. Be aware of any notification when your package arrives Wait for a call from the delivery driver letting you know your package has arrived is now at your door-step."
+                },
+                {
+                    "q": "I have a business and I want to partner with TOlindo, how do I get more information?",
+                    "a": "Please visit our website to sign up as our partner merchant. Our sales representative will contact you soon for further details."
+                }                
+            ]
+        }    
+    ],
+    "driver": [
+        {
+            "group": "Driver",
+            "faq": [
+                {
+                    "q": "What is TOlindo Driver?",
+                    "a": "TOlindo Driver is the smartphone app for drivers. Be your own boss and earn by driving with TOlindo as an employee or contractor. – Sign up with your Bicycle, E-Bike, Car or Van – Accept orders and deliver goods – Start earning money for every delivery you make – Track your earnings easily in the app – Work around your own schedule and pick orders which suit you best Start earning by downloading the TOlindo Driver App and we’ll guide you through each step to become a TOlindo Driver. More Flexibility. More Income. Get Started Today."
+                },
+                {
+                    "q": "Where and when can I drive for TOlindo?",
+                    "a": "TOlindo delivery and courier services are available from 8 AM to 7PM, 7 days a week within the Downtown Toronto area. We offer a 30-minute delivery guarantee within our red zone, on-demand and same day delivery services as well. Our scheduled delivery option is available for customers to receive their packages the same day, or the following day the latest! To view a map of our service areas, go to the app’s navigation menu. Tap “About”, then tap “Delivery Areas”."
+                },
+                {
+                    "q": "How do I become a TOlindo driver?",
+                    "a": "To sign up as a TOlindo Driver. You may also download the TOlindo Driver app to register and submit your application.TOlindo Driver for iOS TOlindo Driver for Android We will review your application and contact you soon for further details."
+                },
+                {
+                    "q": "How and when do I get paid?",
+                    "a": "You will receive your payment through your payout bank account every week. You can set up your payout bank account through the TOlindo Driver App. Please refer to the topic “How do I set my bank account?”"
+                },
+                {
+                    "q": "Does TOlindo take any commission?",
+                    "a": "Yes, TOlindo takes a maximum of 25% commission. Drivers will get up to 80% from the service cost depending on the type of vehicle they drive plus customer’s tip."
+                },
+                {
+                    "q": "What incentives does TOlindo offer?",
+                    "a": "As a TOlindo driver, you enjoy flexible hours and have the freedom to choose delivery orders that suit your convenience."
+                },
+                {
+                    "q": "I already have a job. Can I still drive for TOlindo?",
+                    "a": "Definitely! You can become a part-time TOlindo driver on our platform."
+                },                
+                {
+                    "q": "I don’t have my own vehicle. Can I still drive for TOlindo?",
+                    "a": "Of course! You can drive for TOlindo as an employee and we will provide and assign you the service vehicle to use for delivery. Currently, our TOlindo fleet includes E-Bikes."
+                },
+                {
+                    "q": "What are the minimum requirements to become a TOlindo Driver?",
+                    "a": "In order to drive for TOlindo, you must: Be at least 18 years of age Have proof of your valid and legal status to work in Canada Be willing to undergo a pre-employment medical examination Have no record of criminal offences for which a pardon has not been granted In addition, if you will be using your own vehicle to drive for TOlindo as a contractor, you must be able to provide proof of Vehicle Ownership and Insurance."
+                }
+            ]
+        }
+    ],
+    "merchant": [
+        {
+            "group": "Merchant",
+            "faq": [
+                {
+                    "q": "What services are offered by TOlindo to merchants?",
+                    "a": "We at TOlindo offer the Technology which enables merchant to connect with customers and delivery partners in order to provide their goods and services in the fastest way possible. With our technology, you can customize your virtual stores the way you like and attract more customers. You will enjoy the benefits of self-managing your business with our easy-to-use platform that will cater to your unique needs. With the TOlindo platform, you can easily partner with us or other delivery service providers and the delivery fees will be paid by the customers who order through the app. Non-TOlindo delivery service providers are independent contractors who intend to use TOlindo’s proprietary technology under license from TOlindo or its affiliate."
+                },
+                {
+                    "q": "Who will maintain the availability and storage of the products/items that I will be selling in the TOlindo platform?",
+                    "a": "You as the merchant will prepare, handle, and store all items in accordance with applicable laws and regulations, including without limitation all laws, rules and regulations governing time or temperature controls required for food safety standards."
+                },
+                {
+                    "q": "Will I be provided with any device to help me manage my store at TOlindo?",
+                    "a": "TOlindo will supply you a tablet to use in connection with the availability of items via the app as well as to manage and process your orders."
+                },
+                {
+                    "q": "How much commission/fee do I have to pay TOlindo for items sold in the app?",
+                    "a": "For each item you have sold via the app, you will pay TOlindo the retail price of the item (excluding any sales tax collected on your behalf) multiplied by the applicable fee percentage for the sales channel used to sell such item."
+                },
+                {
+                    "q": "Who determines the sales tax rate for products sold via the TOlindo app?",
+                    "a": "You as the merchant is solely responsible for determining all applicable sales tax and other fees and identifying and informing TOlindo of the appropriate sales tax and other fee amount for TOlindo to charge Customers on Merchant’s behalf for items available on the App."
+                }
+            ]
+        }
+    ]
+    
+}

@@ -1,0 +1,33 @@
+.sf-btn {
+    display: flex;
+    position: relative;
+    width: 180px;
+    height: 54px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    /* margin: 0 auto; */
+    overflow: hidden;
+    color: var(--text-default-color);
+}
+
+.sf-btn:hover .sf-btn-fill {
+    width: 100%;
+}
+
+.sf-btn-fill {
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.sf-btn-title {
+    z-index: 1;
+}

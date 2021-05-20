@@ -1,0 +1,127 @@
+.section-four-features {
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 60px 16px 60px;
+}
+
+.section-four-features-heading {
+    color: var(--text-primary-color);
+    font-size: 30px;
+}
+
+.section-four-features-heading span {
+    color: var(--text-secondary-color);
+}
+
+.section-four-features-text {
+    color: var(--text-primary-color);
+    font-size: 16px;
+    padding: 10px 30px;
+    line-height: 24px;
+}
+
+.section-four-features-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.section-four-features-list-item {
+    width: 50%;
+    margin-bottom: 40px;
+}
+
+.section-four-features-list-item-image-container {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section-four-features-list-item-image {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    left: 0;
+
+    transition: 0.3s;
+}
+
+.section-four-features-list-item-image:hover {
+    top: -10px;
+}
+
+.section-four-features-list-item-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--text-primary-color);
+    line-height: 24px;
+}
+
+@media (min-width: 1024px) {
+    .section-four-features {
+        /* background-color: var(--primary-color); */
+        background-color: transparent;
+        text-align: center;
+        padding: 120px 16px;
+    }
+
+    .section-four-features-heading {
+        color: var(--text-secondary-color);
+        font-size: 48px;
+    }
+
+    .section-four-features-heading span {
+        color: var(--text-default-color);
+    }
+
+    .section-four-features-text {
+        width: 50%;
+        margin: 0 auto;
+        color: var(--text-default-color);
+        font-size: 18px;
+        padding: 30px;
+    }
+
+    .section-four-features-list {
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+
+    .section-four-features-list-item {
+        width: 50%;
+        margin-bottom: 40px;
+    }
+
+    .section-four-features-list-item-image-container {
+        position: relative;
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .section-four-features-list-item-image {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        top: 0;
+        left: 0;
+
+        transition: 0.3s;
+    }
+
+    .section-four-features-list-item-image:hover {
+        top: -10px;
+    }
+
+    .section-four-features-list-item-title {
+        font-size: 18px;
+        color: var(--text-default-color);
+    }
+}

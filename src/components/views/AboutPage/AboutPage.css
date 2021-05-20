@@ -1,0 +1,40 @@
+.article-list {
+    margin-top: 80px;
+}
+
+.article-list-item {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.article-list-item-heading {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 20px;
+}
+
+.article-list-item-text {
+    font-size: 18px;
+    padding: 30px 30px;
+    line-height: 26px;
+}
+
+@media (min-width: 1024px) {
+    .article-list {
+        margin-top: 120px;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .article-list-item-heading {
+        font-size: 30px;
+        padding: 20px 20px;
+    }
+
+    .article-list-item-text {
+        font-size: 18px;
+        padding: 30px 30px;
+        line-height: 30px;
+    }
+}
