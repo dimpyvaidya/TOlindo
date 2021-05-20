@@ -104,22 +104,26 @@ export class MainPage extends React.Component {
                 {
                     title: 'Customize your store',
                     text: 'Setup your store the way you like and attract customers',
-                    image: imgCard1,
+                    // image: imgCard1,
+                    image: '/images/img_card_1.jpeg',
                 },
                 {
                     title: 'Easy customization',
                     text: 'self-managed platform for all your business needs',
-                    image: imgCard2,
+                    // image: imgCard2,
+                    image: '/images/img_card_2.jpeg',
                 },
                 {
                     title: 'Hasseless App for your customers',
                     text: 'TOlindo made it easy for businesses and users.',
-                    image: imgCard3,
+                    // image: imgCard3,
+                    image: '/images/img_card_3.jpeg',
                 },
                 {
                     title: 'Get ready for the orders!',
                     text: 'Live tracking system for your customer’s orders.',
-                    image: imgCard4,
+                    // image: imgCard4,
+                    image: '/images/img_card_4.jpeg',
                 },
             ],
         }

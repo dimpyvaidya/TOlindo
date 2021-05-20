@@ -17,6 +17,7 @@ html {
     color: var(--text-default-color);
     line-height: 1.2;
     word-wrap: break-word;
+    overflow-x: hidden;
 }
 body {
     /* background: #eee; */

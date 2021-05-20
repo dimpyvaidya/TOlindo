@@ -8,8 +8,12 @@ export class MainSlideImages extends React.Component {
         return (
             <section className="section-slide-images">
                 <div className="section-slide-images-container">
-                    <img src={imgBoxWhite} alt="" />
-                    <img src={imgBoxYellowSide} alt="" />
+                    <figure>
+                        <img src={imgBoxWhite} alt="" />
+                    </figure>
+                    <figure>
+                        <img src={imgBoxYellowSide} alt="" />
+                    </figure>
                 </div>
                 <div className="section-slide-images-content">
                     <h2 className="section-slide-images-heading">
