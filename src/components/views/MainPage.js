@@ -95,38 +95,38 @@ export class MainPage extends React.Component {
             ],
         }
 
-        // this.businessListData = {
-        //     heading: {
-        //         firstLine: 'Made Easy',
-        //         secondLine: 'For Your Business',
-        //     },
-        //     listData: [
-        //         {
-        //             title: 'Customize your store',
-        //             text: 'Setup your store the way you like and attract customers',
-        //             image: imgCard1,
-        //             // image: `${process.env.PUBLIC_URL}/images/img_card_1.jpeg`,
-        //         },
-        //         {
-        //             title: 'Easy customization',
-        //             text: 'self-managed platform for all your business needs',
-        //             image: imgCard2,
-        //             // image: `${process.env.PUBLIC_URL}/images/img_card_2.jpeg`,
-        //         },
-        //         {
-        //             title: 'Hasseless App for your customers',
-        //             text: 'TOlindo made it easy for businesses and users.',
-        //             image: imgCard3,
-        //             // image: `${process.env.PUBLIC_URL}/images/img_card_3.jpeg`,
-        //         },
-        //         {
-        //             title: 'Get ready for the orders!',
-        //             text: 'Live tracking system for your customer’s orders.',
-        //             image: imgCard4,
-        //             // image: `${process.env.PUBLIC_URL}/images/img_card_4.jpeg`,
-        //         },
-        //     ],
-        // }
+        this.businessListData = {
+            heading: {
+                firstLine: 'Made Easy',
+                secondLine: 'For Your Business',
+            },
+            listData: [
+                {
+                    title: 'Customize your store',
+                    text: 'Setup your store the way you like and attract customers',
+                    image: imgCard1,
+                    // image: `${process.env.PUBLIC_URL}/images/img_card_1.jpeg`,
+                },
+                {
+                    title: 'Easy customization',
+                    text: 'self-managed platform for all your business needs',
+                    image: imgCard2,
+                    // image: `${process.env.PUBLIC_URL}/images/img_card_2.jpeg`,
+                },
+                {
+                    title: 'Hasseless App for your customers',
+                    text: 'TOlindo made it easy for businesses and users.',
+                    image: imgCard3,
+                    // image: `${process.env.PUBLIC_URL}/images/img_card_3.jpeg`,
+                },
+                {
+                    title: 'Get ready for the orders!',
+                    text: 'Live tracking system for your customer’s orders.',
+                    image: imgCard4,
+                    // image: `${process.env.PUBLIC_URL}/images/img_card_4.jpeg`,
+                },
+            ],
+        }
     }
 
     render() {
@@ -147,8 +147,7 @@ export class MainPage extends React.Component {
                 <MainAppIntroduction />
                 <MainSectionFourFeatures />
 
-                {/* <MainCardList data={this.businessListData} /> */}
-                <MainCardList />
+                <MainCardList data={this.businessListData} />
                 <MainSubscribeNewsLetter />
                 <MainArea />
                 <MainSlideImages />
