@@ -15,7 +15,7 @@ export class MainVideos extends React.Component {
                         <iframe
                             width="560"
                             height="315"
-                            src="https://www.youtube.com/embed/YzVqCd5oSOE"
+                            src="https://www.youtube.com/embed/Z-p3NLgKYIQ"
                             title="YouTube video player"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -34,7 +34,7 @@ export class MainVideos extends React.Component {
                         <iframe
                             width="560"
                             height="315"
-                            src="https://www.youtube.com/embed/rFtWbuxX1xU"
+                            src="https://www.youtube.com/embed/ezuXGpnBi-A"
                             title="YouTube video player"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -53,7 +53,7 @@ export class MainVideos extends React.Component {
                         <iframe
                             width="560"
                             height="315"
-                            src="https://www.youtube.com/embed/y5XJGItKWzo"
+                            src="https://www.youtube.com/embed/S-qEO0TlBh8"
                             title="YouTube video player"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

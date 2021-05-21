@@ -50,6 +50,15 @@
     transition: 0.3s;
 }
 
+#section-four-features-list-item-image-clock {
+    margin-left: -4px;
+}
+
+#section-four-features-list-item-image-mobile {
+    width: 50px;
+    margin-left: 7px;
+}
+
 .section-four-features-list-item-image:hover {
     top: -10px;
 }
@@ -112,8 +121,16 @@
         height: 80px;
         top: 0;
         left: 0;
-
         transition: 0.3s;
+    }
+
+    #section-four-features-list-item-image-clock {
+        margin-left: -8px;
+    }
+
+    #section-four-features-list-item-image-mobile {
+        width: 70px;
+        margin-left: 7px;
     }
 
     .section-four-features-list-item-image:hover {

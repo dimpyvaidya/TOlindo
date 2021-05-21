@@ -1,9 +1,13 @@
 import React from 'react'
 import './MainSectionFourFeatures.css'
-import iconFastDelivery from '../../assets/images/ic_fast_delivery.svg'
-import iconMobileApp from '../../assets/images/ic_mobile_app.svg'
-import iconWideCoverageMap from '../../assets/images/ic_wide_coverage_map.svg'
-import iconReliableFleet from '../../assets/images/ic_reliable_fleet.svg'
+// import iconFastDelivery from '../../assets/images/ic_fast_delivery.svg'
+// import iconMobileApp from '../../assets/images/ic_mobile_app.svg'
+// import iconWideCoverageMap from '../../assets/images/ic_wide_coverage_map.svg'
+// import iconReliableFleet from '../../assets/images/ic_reliable_fleet.svg'
+import iconFastDelivery from '../../assets/images/ic_fast_delivery.png'
+import iconMobileApp from '../../assets/images/ic_mobile_app.png'
+import iconWideCoverageMap from '../../assets/images/ic_wide_coverage_map.png'
+import iconReliableFleet from '../../assets/images/ic_reliable_fleet.png'
 
 export class MainSectionFourFeatures extends React.Component {
     render() {
@@ -24,6 +28,7 @@ export class MainSectionFourFeatures extends React.Component {
                         <div className="section-four-features-list-item-image-container">
                             <img
                                 className="section-four-features-list-item-image"
+                                id="section-four-features-list-item-image-clock"
                                 src={iconFastDelivery}
                                 alt=""
                             />
@@ -38,6 +43,7 @@ export class MainSectionFourFeatures extends React.Component {
                         <div className="section-four-features-list-item-image-container">
                             <img
                                 className="section-four-features-list-item-image"
+                                id="section-four-features-list-item-image-mobile"
                                 src={iconMobileApp}
                                 alt=""
                             />

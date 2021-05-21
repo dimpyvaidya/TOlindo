@@ -61,6 +61,7 @@
         text-align: start;
         padding-left: 100px;
         margin-top: -50px;
+        z-index: 1;
     }
 
     #main-hero-heading {
@@ -92,5 +93,11 @@
         margin-top: 80px;
         margin-left: 0;
         margin-right: 0;
+    }
+
+    @media (max-height: 800px) {
+        #main-hero-image-container {
+            width: 42%;
+        }
     }
 }
