@@ -31,10 +31,16 @@ import imgCard1 from '../../assets/images/img_card_1.jpeg'
 import imgCard2 from '../../assets/images/img_card_2.jpeg'
 import imgCard3 from '../../assets/images/img_card_3.jpeg'
 import imgCard4 from '../../assets/images/img_card_4.jpeg'
+import { Redirect } from 'react-router'
 
 export class MainPage extends React.Component {
-    constructor() {
-        super()
+    constructor(props) {
+        super(props)
+        // For linking to QR code
+        this.state = {
+            businessQR: this.props.location.search.includes('short=1'),
+        }
+
         this.goodsListData = [
             {
                 title: 'Courier',
@@ -130,7 +136,7 @@ export class MainPage extends React.Component {
     }
 
     render() {
-        return (
+        return this.state.businessQR ? null : (
             <div id="main-page">
                 <TOlindoHeader />
                 <MainHero />
@@ -156,5 +162,13 @@ export class MainPage extends React.Component {
                 <MainFooter />
             </div>
         )
+    }
+
+    componentDidMount() {
+        if (this.state.businessQR) {
+            window.location.replace(
+                'https://drive.google.com/file/d/1jDmJAh4q_X8s8c1eWy11GDk-Q2gmeDUq/view?usp=sharing'
+            )
+        }
     }
 }
