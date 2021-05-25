@@ -167,7 +167,7 @@ export class MainPage extends React.Component {
     componentDidMount() {
         if (this.state.businessQR) {
             window.location.replace(
-                'https://drive.google.com/file/d/1jDmJAh4q_X8s8c1eWy11GDk-Q2gmeDUq/view?usp=sharing'
+                'https://drive.google.com/file/d/14NpTcLm3GVtjGNvdALiUKrgiF3o_57KX/view'
             )
         }
     }
