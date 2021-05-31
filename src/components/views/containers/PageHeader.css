@@ -32,6 +32,14 @@
     color: var(--text-primary-Colorectal);
 }
 
+.page-header-menu-nav-group-link {
+    color: var(--text-secondary-color);
+}
+
+.page-header-menu-nav-group-link:hover {
+    color: var(--text-primary-color);
+}
+
 .page-header-menu-nav-current {
     margin-left: 10px;
 }

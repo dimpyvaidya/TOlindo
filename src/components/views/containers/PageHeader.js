@@ -1,6 +1,7 @@
 import React from 'react'
 import './PageHeader.css'
 import { TOlindoHeader } from '../TOlindoHeader'
+import { Link } from 'react-router-dom'
 
 export class PageHeader extends React.Component {
     render() {
@@ -14,7 +15,12 @@ export class PageHeader extends React.Component {
                         </h1>
                         <p className="page-header-menu-nav">
                             <span className="page-header-menu-nav-group">
-                                {this.props.data.menuNavs.group.title}
+                                <Link
+                                    className="page-header-menu-nav-group-link"
+                                    to={`/${this.props.data.menuNavs.group.url}`}
+                                >
+                                    {this.props.data.menuNavs.group.title}
+                                </Link>
                             </span>
                             |
                             <span className="page-header-menu-nav-current">

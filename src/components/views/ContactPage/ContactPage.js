@@ -15,7 +15,7 @@ export class ContactPage extends React.Component {
             menuNavs: {
                 group: {
                     title: 'Home',
-                    url: 'home',
+                    url: '',
                 },
                 current: {
                     title: 'Contacts',

@@ -11,7 +11,7 @@ export class AboutPage extends React.Component {
             menuNavs: {
                 group: {
                     title: 'Home',
-                    url: 'home',
+                    url: '',
                 },
                 current: {
                     title: 'About us',

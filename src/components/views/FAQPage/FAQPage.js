@@ -13,7 +13,7 @@ export class FAQPage extends React.Component {
             menuNavs: {
                 group: {
                     title: 'Home',
-                    url: 'home',
+                    url: '',
                 },
                 current: {
                     title: 'FAQ',

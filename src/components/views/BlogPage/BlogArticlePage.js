@@ -19,12 +19,12 @@ export class BlogArticlePage extends React.Component {
             title: this.article.title,
             menuNavs: {
                 group: {
-                    title: 'Home',
-                    url: 'home',
-                },
-                current: {
                     title: 'Blog',
                     url: 'blog',
+                },
+                current: {
+                    title: this.article.title,
+                    url: '',
                 },
             },
         }
