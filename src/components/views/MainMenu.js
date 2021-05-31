@@ -42,6 +42,11 @@ export class MainMenu extends React.Component {
                         </Link>
                     </li>
                     <li className="main-nav-menu-list-item">
+                        <Link to="/blog" onClick={this.props.menuClickHandler}>
+                            Blog
+                        </Link>
+                    </li>
+                    <li className="main-nav-menu-list-item">
                         <Link to="/faq" onClick={this.props.menuClickHandler}>
                             FAQ
                         </Link>

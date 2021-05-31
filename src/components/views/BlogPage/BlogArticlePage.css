@@ -1,0 +1,142 @@
+.blog-article-page {
+    margin: 40px 30px;
+}
+
+.blog-article-page-date {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+}
+
+.blog-article-page-date img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.blog-article-page-date-text {
+    font-size: 14px;
+}
+
+.blog-article-page-title {
+    font-size: 36px;
+    color: var(--text-default-color);
+    margin-top: 10px;
+}
+
+.blog-article-page-subtitle {
+    font-size: 20px;
+    color: var(--text-default-color);
+    line-height: 24px;
+    font-weight: normal;
+    margin-top: 4px;
+}
+
+.blog-article-page-writer {
+    font-weight: normal;
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.blog-article-page-image {
+    height: 0;
+    padding-bottom: 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 20px;
+}
+
+.blog-article-content h1,
+.blog-article-content h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.blog-article-content h2 {
+    color: #8c7252;
+    margin-top: 40px;
+}
+
+.blog-article-content p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.blog-article-content ol {
+    margin-top: 20px;
+}
+
+.blog-article-content ol li {
+    list-style: decimal;
+    margin: 0 40px;
+    padding: 4px 0;
+}
+
+@media (min-width: 500px) {
+    .blog-article-page {
+        margin: 60px 60px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .blog-article-page {
+        width: 60%;
+        margin: 120px auto;
+    }
+
+    .blog-article-page-date img {
+        width: 30px;
+        height: 30px;
+        margin-right: 14px;
+    }
+
+    .blog-article-page-date-text {
+        font-size: 18px;
+    }
+
+    .blog-article-page-title {
+        font-size: 48px;
+        margin-top: 10px;
+    }
+
+    .blog-article-page-subtitle {
+        font-size: 30px;
+        margin-top: 16px;
+        margin-bottom: 20px;
+    }
+
+    .blog-article-page-writer {
+        font-weight: normal;
+        font-size: 18px;
+        color: #777;
+        margin-bottom: 40px;
+    }
+
+    .blog-article-content h1,
+    .blog-article-content h2 {
+        font-size: 30px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .blog-article-content h2 {
+        color: #8c7252;
+        margin-top: 60px;
+    }
+
+    .blog-article-content p {
+        font-size: 18px;
+        line-height: 30px;
+        margin-top: 20px;
+    }
+
+    .blog-article-content ol li {
+        list-style: decimal;
+        margin: 0 40px;
+        padding: 8px 0;
+        font-size: 18px;
+    }
+}
