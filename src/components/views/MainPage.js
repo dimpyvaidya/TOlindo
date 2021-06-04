@@ -31,6 +31,7 @@ import imgCard1 from '../../assets/images/img_card_1.jpeg'
 import imgCard2 from '../../assets/images/img_card_2.jpeg'
 import imgCard3 from '../../assets/images/img_card_3.jpeg'
 import imgCard4 from '../../assets/images/img_card_4.jpeg'
+import { SubscribePopup } from './popups/SubscribePopup'
 
 export class MainPage extends React.Component {
     constructor(props) {
@@ -159,6 +160,7 @@ export class MainPage extends React.Component {
                 <MainVideos />
                 <MainRecruit />
                 <MainFooter />
+                <SubscribePopup />
             </div>
         )
     }
