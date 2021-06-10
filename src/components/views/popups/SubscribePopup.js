@@ -1,4 +1,5 @@
 import React from 'react'
+import axios from 'axios'
 import './SubscribePopup.css'
 
 export class SubscribePopup extends React.Component {
@@ -6,15 +7,58 @@ export class SubscribePopup extends React.Component {
         super()
         this.state = {
             display: 'block',
+            formVisible: true,
         }
         this.handleCloseBtn = this.handleCloseBtn.bind(this)
+        this.handleSubmit = this.handleSubmit.bind(this)
     }
 
     handleCloseBtn() {
-        this.setState({ display: 'none' })
+        this.setState({ display: 'none', formVisible: true })
         setTimeout(() => {
             this.setState({ display: 'block' })
         }, 10000)
+    }
+
+    handleSubmit(event) {
+        event.preventDefault()
+        const formData = new FormData(event.target)
+        const data = Object.fromEntries(formData.entries())
+
+        data.phone =
+            document.querySelector('#subscribe_popup_phone_1').value +
+            '-' +
+            document.querySelector('#subscribe_popup_phone_2').value +
+            '-' +
+            document.querySelector('#subscribe_popup_phone_3').value
+
+        // console.log(data)
+
+        axios
+            .post(
+                `https://a84l7b7lrl.execute-api.us-east-2.amazonaws.com/api/v1/subscribers`,
+                data
+            )
+            .then((res) => {
+                // console.log(res.data)
+                if (res.data.statusCode === 200) {
+                    this.setState({ formVisible: false })
+                } else if (
+                    res.data.statusCode === 400 &&
+                    res.data.title === 'Member Exists'
+                ) {
+                    data.status = 'subscribed'
+                    axios
+                        .patch(
+                            `https://a84l7b7lrl.execute-api.us-east-2.amazonaws.com/api/v1/subscribers`,
+                            data
+                        )
+                        .then((res) => {
+                            // console.log(res.data)
+                            this.setState({ formVisible: false })
+                        })
+                }
+            })
     }
 
     render() {
@@ -24,171 +68,109 @@ export class SubscribePopup extends React.Component {
                     id="popup_subscribe_close_btn"
                     onClick={this.handleCloseBtn}
                 ></div>
-                <h2 id="popup_subscribe_heading">Subscribe to our services</h2>
-                <div id="mc_embed_signup">
-                    <form
-                        action="https://tolindo.us7.list-manage.com/subscribe/post?u=beb7ae6d57b6f8b2cd4ed932c&amp;id=a6296eab6b"
-                        method="post"
-                        id="mc-embedded-subscribe-form"
-                        name="mc-embedded-subscribe-form"
-                        className="validate"
-                        target="_blank"
-                        noValidate
-                    >
-                        <div id="mc_embed_signup_scroll">
-                            <div className="mc-field-group">
-                                {/* <label htmlFor="mce-CNAME">Company Name </label> */}
-                                <input
-                                    type="hidden"
-                                    name="CNAME"
-                                    className="required"
-                                    id="mce-CNAME"
-                                />
-                            </div>
-                            <div className="mc-field-group">
-                                <label htmlFor="mce-EMAIL">Email</label>
-                                <input
-                                    type="email"
-                                    name="EMAIL"
-                                    className="required email"
-                                    id="mce-EMAIL"
-                                />
-                            </div>
-                            <div className="mc-field-group size1of2">
-                                <label htmlFor="mce-MMERGE6">
-                                    Phone Number{' '}
-                                </label>
-                                <div className="phonefield phonefield-us">
-                                    <span className="phonearea">
-                                        <input
-                                            className="phonepart required"
-                                            pattern="[0-9]*"
-                                            id="mce-MMERGE6-area"
-                                            name="MMERGE6[area]"
-                                            maxLength="3"
-                                            size="3"
-                                            type="text"
-                                            placeholder="###"
-                                        />
-                                    </span>{' '}
-                                    <span className="phonedetail1">
-                                        <input
-                                            className="phonepart required"
-                                            pattern="[0-9]*"
-                                            id="mce-MMERGE6-detail1"
-                                            name="MMERGE6[detail1]"
-                                            maxLength="3"
-                                            size="3"
-                                            type="text"
-                                            placeholder="###"
-                                        />
-                                    </span>{' '}
-                                    <span className="phonedetail2">
-                                        <input
-                                            className="phonepart required"
-                                            pattern="[0-9]*"
-                                            id="mce-MMERGE6-detail2"
-                                            name="MMERGE6[detail2]"
-                                            maxLength="4"
-                                            size="4"
-                                            type="text"
-                                            placeholder="####"
-                                        />
-                                    </span>
+                <div
+                    id="popup_subscribe_form"
+                    style={{
+                        display: this.state.formVisible ? 'block' : 'none',
+                    }}
+                >
+                    <h2 id="popup_subscribe_heading">
+                        Subscribe to our services
+                    </h2>
+                    <div id="mc_embed_signup">
+                        <form
+                            className="validate"
+                            target="_blank"
+                            // noValidate
+                            onSubmit={this.handleSubmit}
+                        >
+                            <div id="mc_embed_signup_scroll">
+                                <div className="mc-field-group">
+                                    <label htmlFor="subscribe_popup_email">
+                                        Email
+                                    </label>
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        className="required email"
+                                        id="subscribe_popup_email"
+                                    />
+                                </div>
+                                <div className="mc-field-group size1of2">
+                                    <label htmlFor="mce-MMERGE6">
+                                        Phone Number{' '}
+                                    </label>
+                                    <div className="phonefield phonefield-us">
+                                        <span className="phonearea">
+                                            <input
+                                                className="phonepart required"
+                                                pattern="[0-9]*"
+                                                maxLength="3"
+                                                size="3"
+                                                type="text"
+                                                placeholder="###"
+                                                id="subscribe_popup_phone_1"
+                                            />
+                                        </span>{' '}
+                                        <span className="phonedetail1">
+                                            <input
+                                                className="phonepart required"
+                                                pattern="[0-9]*"
+                                                maxLength="3"
+                                                size="3"
+                                                type="text"
+                                                placeholder="###"
+                                                id="subscribe_popup_phone_2"
+                                            />
+                                        </span>{' '}
+                                        <span className="phonedetail2">
+                                            <input
+                                                className="phonepart required"
+                                                pattern="[0-9]*"
+                                                maxLength="4"
+                                                size="4"
+                                                type="text"
+                                                placeholder="####"
+                                                id="subscribe_popup_phone_3"
+                                            />
+                                        </span>
+                                    </div>
+                                </div>
+                                <div className="mc-field-group">
+                                    <label htmlFor="subscribe_popup_name">
+                                        Contact Name{' '}
+                                    </label>
+                                    <input
+                                        type="text"
+                                        className="required"
+                                        id="subscribe_popup_name"
+                                        name="name"
+                                    />
+                                </div>
+                                <div className="clear">
+                                    <input
+                                        type="submit"
+                                        value="Subscribe"
+                                        className="button"
+                                    />
                                 </div>
                             </div>
-                            <div className="mc-field-group">
-                                <label htmlFor="mce-NAME">Contact Name </label>
-                                <input
-                                    type="text"
-                                    name="NAME"
-                                    className="required"
-                                    id="mce-NAME"
-                                />
-                            </div>
-                            {/* <div className="mc-field-group">
-                                <label htmlFor="mce-MMERGE2">Website </label>
-                                <input
-                                    type="url"
-                                    value=""
-                                    name="MMERGE2"
-                                    className=" url"
-                                    id="mce-MMERGE2"
-                                />
-                            </div>
-                            <div className="mc-field-group">
-                                <label htmlFor="mce-MMERGE4">Website </label>
-                                <input
-                                    type="url"
-                                    value=""
-                                    name="MMERGE4"
-                                    className=" url"
-                                    id="mce-MMERGE4"
-                                />
-                            </div>
-                            <div className="mc-field-group input-group">
-                                <strong>Email Format </strong>
-                                <ul>
-                                    <li>
-                                        <input
-                                            type="radio"
-                                            value="html"
-                                            name="EMAILTYPE"
-                                            id="mce-EMAILTYPE-0"
-                                        />
-                                        <label htmlFor="mce-EMAILTYPE-0">
-                                            html
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <input
-                                            type="radio"
-                                            value="text"
-                                            name="EMAILTYPE"
-                                            id="mce-EMAILTYPE-1"
-                                        />
-                                        <label htmlFor="mce-EMAILTYPE-1">
-                                            text
-                                        </label>
-                                    </li>
-                                </ul>
-                            </div> */}
-                            <div id="mce-responses" className="clear">
-                                <div
-                                    className="response"
-                                    id="mce-error-response"
-                                    style={{ display: 'none' }}
-                                ></div>
-                                <div
-                                    className="response"
-                                    id="mce-success-response"
-                                    style={{ display: 'none' }}
-                                ></div>
-                            </div>
-                            <div
-                                style={{
-                                    position: 'absolute',
-                                    left: '-5000px',
-                                }}
-                                aria-hidden="true"
-                            >
-                                <input
-                                    type="text"
-                                    name="b_beb7ae6d57b6f8b2cd4ed932c_a6296eab6b"
-                                    tabIndex="-1"
-                                />
-                            </div>
-                            <div className="clear">
-                                <input
-                                    type="submit"
-                                    value="Subscribe"
-                                    name="subscribe"
-                                    id="mc-embedded-subscribe"
-                                    className="button"
-                                />
-                            </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
+                </div>
+                <div
+                    id="popup_subscribe_thanks"
+                    style={{
+                        display: this.state.formVisible ? 'none' : 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        width: '100%',
+                        height: '100%',
+                    }}
+                >
+                    <h2 style={{ fontWeight: 'normal', fontSize: '1.2rem' }}>
+                        Thanks for subsribing!
+                    </h2>
                 </div>
             </div>
         )
