@@ -169,7 +169,7 @@ export class SubscribePopup extends React.Component {
                     }}
                 >
                     <h2 style={{ fontWeight: 'normal', fontSize: '1.2rem' }}>
-                        Thanks for subsribing!
+                        Thanks for subscribing!
                     </h2>
                 </div>
             </div>
