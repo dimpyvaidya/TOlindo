@@ -48,8 +48,8 @@ export class BlogPage extends React.Component {
                                 }
                                 key={index}
                             >
-                                <div>
-                                  <img src={item.image} alt=""  style={{height: 0;padding-bottom: 70%;background-repeat: no-repeat;background-size: cover;background-position: bottom;border-radius: 20px; }}/>
+                                <div style={{paddingRight:'20px'}}>
+                                  <img src={item.image} alt=""  style={{display: 'block', margin: '20px auto',width: '100%', borderRadius : '20px'}}/>
                                 </div>
                                 
                                 <h1 className="blog-list-item-title">
