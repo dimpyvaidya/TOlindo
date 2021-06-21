@@ -55,12 +55,9 @@ export class BlogArticlePage extends React.Component {
                         {this.article.subtitle}
                     </h2>
                     <h3 className="blog-article-page-writer">{`${this.article.writer.firstName} ${this.article.writer.lastName}, ${this.article.writer.belongTo}`}</h3>
-                    <figure
-                        className="blog-article-page-image"
-                        style={{
-                            backgroundImage: `url('/blog_images/blog_20210520.png')`,
-                        }}
-                    ></figure>
+                    <div>
+                        <img src= {this.article.image} alt="" style={{display: 'block', margin: '20px auto', width: '100%', borderRadius : '20px' }}/>
+                    </div>
                     <div
                         className="blog-article-content"
                         dangerouslySetInnerHTML={{

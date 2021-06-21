@@ -74,17 +74,17 @@ export class MainPage extends React.Component {
             text: 'TOlindo has a company-branded fleet of e-bike employees, and owner operator vehicles all the way up to cargo vans for your same day cost-effective delivery needs.',
             listData: [
                 {
-                    title: 'Truck',
+                    title: 'Trucks',
                     text: 'Pick up time within 3 hours.',
                     image: iconTruck,
                 },
                 {
-                    title: 'Van',
+                    title: 'Vans',
                     text: 'For medium to large size packages. Pick up within 3 hours.',
                     image: iconVan,
                 },
                 {
-                    title: 'Car',
+                    title: 'Cars',
                     text: 'For your sensitive products, pickup within 1hour.',
                     image: iconCar,
                 },

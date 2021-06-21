@@ -48,12 +48,10 @@ export class BlogPage extends React.Component {
                                 }
                                 key={index}
                             >
-                                <figure
-                                    className="blog-list-item-image"
-                                    style={{
-                                        backgroundImage: `url('/blog_images/blog_20210520.png')`,
-                                    }}
-                                ></figure>
+                                <div className="blog-list-item-image">
+                                  <img src={item.image} alt=""  />
+                                </div>
+                                
                                 <h1 className="blog-list-item-title">
                                     {item.title}
                                 </h1>
