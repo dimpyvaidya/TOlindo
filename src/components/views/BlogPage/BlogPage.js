@@ -48,7 +48,7 @@ export class BlogPage extends React.Component {
                                 }
                                 key={index}
                             >
-                                <div style={{paddingRight:'20px'}}>
+                                <div style={{paddingRight:'30px'}}>
                                   <img src={item.image} alt=""  style={{display: 'block', margin: '20px auto',width: '100%', borderRadius : '20px'}}/>
                                 </div>
                                 
