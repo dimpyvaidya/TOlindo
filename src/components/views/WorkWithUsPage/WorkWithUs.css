@@ -1,0 +1,23 @@
+.background {
+    background-color: #ede268;
+    padding: 2em; 
+}
+
+.img_bottom {
+    margin-bottom: 1em;
+}
+
+
+@media (min-width: 1024px) {
+    .background {
+        padding: 6em; 
+    }
+    
+    .img_bottom {
+    margin-bottom: 5em;
+    }
+
+    hr.dotted {
+        border-top: 3px dotted #07234f;
+      }
+    }

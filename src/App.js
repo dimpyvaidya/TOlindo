@@ -6,6 +6,7 @@ import { ContactPage } from './components/views/ContactPage/ContactPage'
 import { FAQPage } from './components/views/FAQPage/FAQPage'
 import { BlogPage } from './components/views/BlogPage/BlogPage'
 import { BlogArticlePage } from './components/views/BlogPage/BlogArticlePage'
+import { WorkWithUs } from './components/views/WorkWithUsPage/WorkWithUs'
 
 function App() {
     return (
@@ -16,7 +17,8 @@ function App() {
                 <Route path="/blog/:id" component={BlogArticlePage} />
                 <Route path="/blog" component={BlogPage} />
                 <Route path="/faq" component={FAQPage} />
-                <Route path="/contact" component={ContactPage} />
+                <Route path="/contact" component={ContactPage} /> 
+                <Route path="/workwithus" component={WorkWithUs}/>
             </Switch>
         </Router>
     )

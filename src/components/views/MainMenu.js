@@ -52,11 +52,17 @@ export class MainMenu extends React.Component {
                         </Link>
                     </li>
                     <li className="main-nav-menu-list-item">
-                        <Link
-                            to="/contact"
+                        <Link to="/contact"
                             onClick={this.props.menuClickHandler}
                         >
                             Contacts
+                        </Link>
+                    </li>
+                    <li className="main-nav-menu-list-item">
+                        <Link to="/workwithus"
+                            onClick={this.props.menuClickHandler}
+                        >
+                            Work with us
                         </Link>
                     </li>
                 </ul>
