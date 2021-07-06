@@ -1,23 +1,227 @@
-.background {
-    background-color: #ede268;
-    padding: 2em; 
+
+#wwu {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding-top: 50px;
 }
 
-.img_bottom {
-    margin-bottom: 1em;
+#wwu-heading {
+    color: var(--text-default-color);
+    font-size: 36px;
+    font-weight: bold;
 }
 
+#wwu-heading-yellow {
+    background-color: var(--primary-color);
+    color: var(--text-default-color);
+    padding-top: 1em;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#wwu-heading span {
+    color: var(--primary-color);
+}
+
+#wwu-text {
+    color: var(--text-default-color);
+    font-size: 16px;
+    padding: 10px 30px;
+    line-height: 24px;
+}
+
+#wwu-text2 {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    padding: 0;
+    padding-top: 40px;
+    line-height: 24px;
+
+}
+
+#wwu-btn {
+    margin-top: 30px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main-footer-social-container {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.main-footer-social-container-icon {
+    padding: 10px 16px;
+}
+
+#wwu-image-container {
+    padding: 40px 30px;
+    /* background-color: var(--primary-color); */
+    background-color: transparent;
+
+}
+hr.dotted {
+    border-top: 3px dotted #07234f;
+    margin: 0% 60px;
+  }
+
+  #image{
+    max-width: 50%;
+    height: auto;
+}
+
+#appstore-img{
+    padding:0 10px;
+}
+
+.contacts-form {
+    margin-top: 60px;
+}
+
+.contacts-form-heading {
+    font-size: 30px;
+    text-align: center;
+}
+
+.contacts-form-container {
+    width: 80%;
+    margin: 30px auto 0;
+    margin-bottom: 120px;
+}
+
+.contacts-form input {
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 48px;
+    padding: 20px 22px;
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.contacts-form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    height: 140px;
+    border-radius: 48px;
+    padding: 20px 22px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.contacts-form button {
+    width: 100%;
+    height: 60px;
+    border-radius: 40px;
+    background-color: var(--primary-color);
+    font-size: 16px;
+    font-weight: bold;
+    color: #282932;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.contacts-form button:hover {
+    color: var(--text-primary-color);
+    background-color: var(--secondary-color);
+}
 
 @media (min-width: 1024px) {
-    .background {
-        padding: 6em; 
-    }
-    
-    .img_bottom {
-    margin-bottom: 5em;
+   
+    #wwu {
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 3em 5em;
     }
 
-    hr.dotted {
-        border-top: 3px dotted #07234f;
-      }
+    #wwu-content {
+        text-align: start;
+        /* padding-left: 150px; */
+        margin-top: -50px;
+        z-index: 1;
     }
+    
+    #wwu-heading {
+        font-size: 50px;
+        line-height: 80px;
+    }
+
+    #wwu-heading-yellow {
+        font-size: 50px;
+        line-height: 80px;
+        background-color:var(--primary-color) ;
+    }
+
+    #wwu-text {
+        width: 90%;
+        font-size: 20px;
+        text-align: start;
+        padding: 0;
+        padding-top: 40px;
+        line-height: 30px;
+    }
+
+    #wwu-text2 {
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+        padding: 0;
+        padding-top: 40px;
+        line-height: 30px;
+    
+    }
+
+    #wwu-image-container {
+        width: 60%;
+        bottom: 20px;
+        /* padding-right: 5em; */
+        background-color: transparent;
+    }
+
+
+    #wwu-btn {
+        width: 260px;
+        height: 74px;
+        border-radius: 37px;
+        margin-top: 80px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    #image{
+        max-width: 200%;
+        height: auto;
+        padding-right: 20em;
+        
+    }
+
+    #how-to-img{
+        max-width: 90%;
+        height: 10%;
+        padding-bottom: 50px;
+        padding-right: 15em;       
+    }
+
+    .contacts-form-container {
+        width: 30%;
+        margin-bottom: 120px;
+    }
+
+
+    @media (max-height: 800px) {
+        #wwu-image-container {
+            width: 42%;
+        }
+        hr.dotted {
+            border-top: 3px dotted #2b2c2e;
+            margin: 0% 60px;
+          }
+    }
+}
