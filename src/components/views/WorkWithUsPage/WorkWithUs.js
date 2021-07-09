@@ -7,7 +7,7 @@ import './WorkWithUs.css'
 import { Link } from 'react-router-dom'
 
 
-import workwithus2 from '../../../assets/images/work_with_us_2.jpeg'
+import workwithus2 from '../../../assets/images/work_with_us_2.png'
 
 import iconAppStore from '../../../assets/images/ic_appstore.png'
 import iconGoogleStore from '../../../assets/images/ic_googlestore.png'
@@ -180,7 +180,7 @@ export class WorkWithUs extends React.Component {
                     <div id="wwu-content">
                         <h2>Fully guided process</h2>
                         <p id="wwu-text">
-                            A representative will guide you on how to start building your store, & share tips on how to customize it.
+                            A representative will guide you on building your store, & share tips for customization.
                         </p>
                     </div>
                 </div>
@@ -226,7 +226,7 @@ export class WorkWithUs extends React.Component {
                         <Link
                             to={{
                                 pathname:
-                                    'https://apps.apple.com/in/app/tolindo-driver/id1520192940',
+                                    'https://apps.apple.com/in/app/tolindo/id1519808601',
                             }}
                             target="_blank"
                         >
@@ -235,7 +235,7 @@ export class WorkWithUs extends React.Component {
                         <Link
                             to={{
                                 pathname:
-                                    'https://play.google.com/store/apps/details?id=app.tolindo.driver',
+                                    'https://play.google.com/store/apps/details?id=app.tolindo.customer',
                             }}
                             target="_blank"
                         >

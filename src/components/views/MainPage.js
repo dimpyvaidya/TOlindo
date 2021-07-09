@@ -157,7 +157,7 @@ export class MainPage extends React.Component {
                 <MainSubscribeNewsLetter />
                 <MainArea />
                 <MainSlideImages />
-                <MainVideos />
+                {/* <MainVideos /> */}
                 <MainRecruit />
                 <MainFooter />
                 <SubscribePopup />
