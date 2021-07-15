@@ -31,19 +31,15 @@ export class AboutPage extends React.Component {
                             Best courier services in Toronto
                         </h2>
                         <p className="article-list-item-text">
-                        Incorporated in 2017, TOlindo is a Toronto-based technology and transportation company merging different markets into one platform of instant deliveries. Our TOlindo application's marketplace connects people with restaurants, fresh food, groceries, convenience stores, pharmacies, and other local businesses within Toronto city.
-                        <br/> All you need, just one click away! 
-                        <br/>TOlindo provides expedited delivery and courier service in downtown Toronto in the Groceries, Pharmacy, Food, and Bazaar sectors. Whether you need an instant delivery or a scheduled one, TOlindo covers you with a fleet of company e-bikes and owner-operators up to cargo vans and trucks for all your delivery needs. 
-                        </p>
+                        Incorporated in 2017, TOlindo is a Toronto-based technology and transportation company merging different markets into one platform of instant deliveries. Our TOlindo application's marketplace connects people with restaurants, fresh food, groceries, convenience stores, pharmacies, and other local businesses within Toronto city. <br/>All you need, just one click away! <br/>TOlindo provides expedited delivery and courier service in downtown Toronto in the Groceries, Pharmacy, Food, and Bazaar sectors. Whether you need an instant delivery or a scheduled one, TOlindo covers you with a fleet of company e-bikes and owner-operators up to cargo vans and trucks for all your delivery needs.                         </p>
                     </li>
                     <li className="article-list-item">
                         <h2 className="article-list-item-heading">
                             Our Commitment to Professionalism
                         </h2>
                         <p className="article-list-item-text">
-                        TOlindo board members have 15+ years of experience in the Canadian transportation industry, working with large corporations such as... 
-
-We take pride in our reputation of providing the most excellent and high-quality customer service.
+                        TOlindo board members have 12+ years of experience in the Canadian transportation industry, working with corporations such as Espolon Transport Inc, Proback transport and Yellow Squad Inc. 
+                        We take pride in our reputation of providing the most excellent and high-quality customer service.
                         </p>
                     </li>
                     <li className="article-list-item">
