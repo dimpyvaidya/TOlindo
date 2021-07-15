@@ -31,25 +31,9 @@ export class AboutPage extends React.Component {
                             Best courier services in Toronto
                         </h2>
                         <p className="article-list-item-text">
-                            Incorporated in 2017, TOlindo is a Toronto-based
-                            technology and transportation company merging
-                            different markets into one platform of instant
-                            deliveries, our TOlindo app marketplace connects
-                            people with the best restaurants, fresh food,
-                            groceries, convenience stores, pharmacies, and other
-                            local businesses within Toronto city. TOlindo now
-                            becomes best courier services in Toronto. All you
-                            need, just one click away!
-                            <br /> We provide expedited delivery and courier
-                            service in Toronto Downtown for all customer needs,
-                            which includes many major categories in the Courier,
-                            Groceries, Pharmacy, Food, and Bazaar sectors.
-                            Whether you need an instant service or schedule one,
-                            TOlindo covers you with a fleet of company e-bikes,
-                            and owner-operators all the way up to cargo vans and
-                            trucks for all your delivery needs. Just with one
-                            click, we deliver within 30 Minutes in the downtown
-                            core!
+                        Incorporated in 2017, TOlindo is a Toronto-based technology and transportation company merging different markets into one platform of instant deliveries. Our TOlindo application's marketplace connects people with restaurants, fresh food, groceries, convenience stores, pharmacies, and other local businesses within Toronto city.
+                        <br/> All you need, just one click away! 
+                        <br/>TOlindo provides expedited delivery and courier service in downtown Toronto in the Groceries, Pharmacy, Food, and Bazaar sectors. Whether you need an instant delivery or a scheduled one, TOlindo covers you with a fleet of company e-bikes and owner-operators up to cargo vans and trucks for all your delivery needs. 
                         </p>
                     </li>
                     <li className="article-list-item">
@@ -57,14 +41,9 @@ export class AboutPage extends React.Component {
                             Our Commitment to Professionalism
                         </h2>
                         <p className="article-list-item-text">
-                            The success of TOlindo Deliveries is due to our
-                            dedicated and experienced operations team and the
-                            couriers we work with. Our employees and contractors
-                            are among the best and most reliable courier
-                            services in Toronto and many of them have been with
-                            the company for years. We take pride in our
-                            reputation of providing the most excellent and
-                            high-quality customer service.
+                        TOlindo board members have 15+ years of experience in the Canadian transportation industry, working with large corporations such as... 
+
+We take pride in our reputation of providing the most excellent and high-quality customer service.
                         </p>
                     </li>
                     <li className="article-list-item">
@@ -72,13 +51,7 @@ export class AboutPage extends React.Component {
                             Mission and Values
                         </h2>
                         <p className="article-list-item-text">
-                            Building a sustainable partnership for today and
-                            tomorrow. From one family business to another family
-                            business, we are a community, we care about
-                            customers, We deliver exceptional, innovative
-                            service offering the most affordable prices. We care
-                            about business owners offering updated logistics
-                            software to compete in the market keeping low rates.
+                        Our mission is to develop sustainable and mutually beneficial partnerships with local business owners. From one family business to another, we are a community! We care about our clients and aim to deliver exceptional, innovative service while offering affordable prices. 
                         </p>
                     </li>
                     <li className="article-list-item">
@@ -86,31 +59,24 @@ export class AboutPage extends React.Component {
                             Why Choose Us?
                         </h2>
                         <p className="article-list-item-text">
-                            Delivery has skyrocketed through COVID. How is your
-                            business coping? Have you ever felt helpless because
-                            you weren’t able to provide the best service? or
-                            perhaps lost a sales opportunity because of late
-                            deliveries? Worry no more! Because with TOlindo, you
-                            can send flowers, chocolates, gift items, tech
-                            items, and anything under the sun in just a matter
-                            of 30minutes. TOlindo gives your business an edge by
-                            giving your customers the best delivery service
-                            throughout Covid-19. Keep your customers in the loop
-                            by listing your store within TOlindo E-commerce
-                            Marketplace. It’s like having a chauffer of your
-                            own! Say hello to your on-demand service that is
-                            right for your business. Simply download the app,
-                            and use it once you want it! No monthly fees.
-                            <br />
-                            <br />
-                            Let’s chat to get started!
+                        TOlindo provides your business with an edge by giving your customers the best delivery service throughout Covid-19. Keep your customers in the loop by listing your items/products in your TOlindo E-commerce Marketplace store. Download the TOlindo app and register your business for free! 
+                         
                         </p>
                     </li>
                     <li className="article-list-item">
                         <h2 className="article-list-item-heading">
-                            Why pay more?
+                        Let us do the work! 
                         </h2>
-                        <p className="article-list-item-text"></p>
+                        <p className="article-list-item-text">
+                        When you register your business with us, we will send a representative to help you set up your e-store, upload products, offer promotions and guide you on app navigation. You will receive a company-branded tablet to help you manage your store from anywhere! 
+                        </p>
+                    </li>
+                    <li className="article-list-item">
+                        <h2 className="article-list-item-heading">
+                        Get ready for a unique <br/>Customer Service experience! 
+                        </h2>
+                        <p className="article-list-item-text">
+                        Customer service is at the top of TOlindo's priority. We promise to go out of our way to guarantee our clients' satisfaction! Since our office locates in the heart of downtown Toronto, we will always make time to send a representative to help you in person, over the phone or via email, depending on your preferences.                          </p>
                     </li>
                 </ul>
                 <MainFooter />
