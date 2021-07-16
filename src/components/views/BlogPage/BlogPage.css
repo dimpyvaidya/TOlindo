@@ -1,5 +1,8 @@
 .blog-list {
     margin: 40px 30px;
+    /* Added flex and wrap to display the blog list in next line */
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .blog-list-item {
