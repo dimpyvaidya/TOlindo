@@ -46,7 +46,7 @@ export class MainMenu extends React.Component {
                             Blog
                         </Link>
                     </li>
-                    <li className="main-nav-menu-list-item">
+                    {/* <li className="main-nav-menu-list-item">
                         <Link to="/faq" onClick={this.props.menuClickHandler}>
                             FAQ
                         </Link>
@@ -57,7 +57,7 @@ export class MainMenu extends React.Component {
                         >
                             Contacts
                         </Link>
-                    </li>
+                    </li> */}
                     <li className="main-nav-menu-list-item">
                         <Link to="/workwithus"
                             onClick={this.props.menuClickHandler}
