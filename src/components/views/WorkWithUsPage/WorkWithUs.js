@@ -168,7 +168,7 @@ export class WorkWithUs extends React.Component {
                     <div id="wwu-content">
                         <h2>Register with us</h2>
                         <p id="wwu-text">
-                        Create an account on our <a href="https://tolindo.net/merchant/"><i>digital platform</i></a> and provide the necessary information.
+                        Create an account on our <a href="https://tolindo.net/merchant/auth/register"><i>digital platform</i></a> and provide the necessary information.
                         </p>
                     </div>
                 </div>

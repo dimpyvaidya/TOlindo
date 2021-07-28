@@ -54,6 +54,9 @@ export class AboutPage extends React.Component {
         return (
             <div style={{ overflow: 'hidden' }}>
                 <PageHeader data={this.headerData} />
+                
+                {/* About section */}
+                <section id="about">
                 <ul className="article-list">
                     <li className="article-list-item">
                         <h2 className="article-list-item-heading">
@@ -120,10 +123,19 @@ export class AboutPage extends React.Component {
                     </div>
                 </div>
                 </section>
+                </section>
 
                 {/* FAQs section */}
-
+                <section id="FAQs">
+                <ul className="article-list">
+                    <li className="article-list-item">
+                        <h1 className="article-list-item-heading">
+                            Frequently asked questions
+                        </h1>
+                        </li>
+                        </ul>
                     <section className="section-faq">
+                    
                     {FAQData.customer.map((item) => {
                         return (
                             <div key={item.group} className="faq-container">
@@ -154,6 +166,7 @@ export class AboutPage extends React.Component {
                             </div>
                         )
                     })}
+                </section>
                 </section>
 
                 {/* Contact section */}
