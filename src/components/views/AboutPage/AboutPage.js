@@ -110,6 +110,7 @@ export class AboutPage extends React.Component {
                 </ul>
 
                 {/* Women owner section */}
+                <section id="ceo">
                 <section id="section-main-app-intro">
                 <div className="section-main-app-intro-container">
                     <h2 className="main-app-intro-heading">
@@ -124,9 +125,10 @@ export class AboutPage extends React.Component {
                 </div>
                 </section>
                 </section>
+                </section>
 
                 {/* FAQs section */}
-                <section id="FAQs">
+                <section id="faq">
                 <ul className="article-list">
                     <li className="article-list-item">
                         <h1 className="article-list-item-heading">
@@ -170,8 +172,8 @@ export class AboutPage extends React.Component {
                 </section>
 
                 {/* Contact section */}
-                <section id="section-main-app-intro">
-                <div className="section-main-app-intro-container">
+                <section id="section-main-app-intro" >
+                <div className="section-main-app-intro-container" id="contact">
                 <h2 className="main-app-intro-heading">
                         Contact us
                     </h2>

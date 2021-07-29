@@ -3,6 +3,7 @@ import './MainMenu.css'
 import iconLogo from '../../assets/images/ic_logo.png'
 import iconClose from '../../assets/images/ic_close.svg'
 import { Link } from 'react-router-dom'
+// import { Link } from 'react-scroll'
 
 export class MainMenu extends React.Component {
     render() {
@@ -36,34 +37,26 @@ export class MainMenu extends React.Component {
                             Home
                         </Link>
                     </li>
+                   
                     <li className="main-nav-menu-list-item">
+                        <div className="subnav">
                         <Link to="/about" onClick={this.props.menuClickHandler}>
-                            About us
-                        </Link>
-                        {/* <Link href="#FAQs" onClick={this.props.menuClickHandler}>
-                            FAQs
-                        </Link>
-                        <Link href="#contact" onClick={this.props.menuClickHandler}>
-                            Contact us
-                        </Link> */}
+                            About  us   <i class="fa fa-caret-down"></i></Link>
+                            <div className="subnav-content">
+                                <a href="/about#about">Who we are</a>
+                                {/* <a href="#ceo">TOlindo CEO</a> */}
+                                <a href="/about#faq">TOlindo FAQs</a>
+                                <a href="/about#contact">Contact us</a>
+                            </div>
+                        </div> 
                     </li>
+
                     <li className="main-nav-menu-list-item">
                         <Link to="/blog" onClick={this.props.menuClickHandler}>
                             Blog
                         </Link>
                     </li>
-                    {/* <li className="main-nav-menu-list-item">
-                        <Link to="/faq" onClick={this.props.menuClickHandler}>
-                            FAQ
-                        </Link>
-                    </li>
-                    <li className="main-nav-menu-list-item">
-                        <Link to="/contact"
-                            onClick={this.props.menuClickHandler}
-                        >
-                            Contacts
-                        </Link>
-                    </li> */}
+                    
                     <li className="main-nav-menu-list-item">
                         <Link to="/workwithus"
                             onClick={this.props.menuClickHandler}
