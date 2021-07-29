@@ -115,7 +115,7 @@ export class AboutPage extends React.Component {
                 <div className="section-main-app-intro-container">
                     <h2 className="main-app-intro-heading">
                         Women-led business
-                    </h2>
+                    </h2><br/>
                     <div className="container">
                     <img src={nabiaimg} alt="workwithus2" className="owner-img"/>
                     <p  className="article-list-item-text2">

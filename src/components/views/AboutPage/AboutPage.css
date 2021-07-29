@@ -24,7 +24,20 @@
     padding: 30px 30px;
     line-height: 26px;
 }
+.owner-img{
+    /* padding-top: 2em; */
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
 
+}
+.article-list-item-text2 {
+    color: white;
+    font-size: 18px;
+    padding: 30px 30px;
+    line-height: 30px;
+    padding: 1.5em 2em 0 2em;
+}
 .faq-container {
     margin: 60px 0;
 }

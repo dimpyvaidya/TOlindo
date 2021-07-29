@@ -37,19 +37,6 @@ export class MainMenu extends React.Component {
                             Home
                         </Link>
                     </li>
-                   
-                    <li className="main-nav-menu-list-item">
-                        <div className="subnav">
-                        <Link to="/about" onClick={this.props.menuClickHandler}>
-                            About  us   <i class="fa fa-caret-down"></i></Link>
-                            <div className="subnav-content">
-                                <a href="/about#about">Who we are</a>
-                                {/* <a href="#ceo">TOlindo CEO</a> */}
-                                <a href="/about#faq">TOlindo FAQs</a>
-                                <a href="/about#contact">Contact us</a>
-                            </div>
-                        </div> 
-                    </li>
 
                     <li className="main-nav-menu-list-item">
                         <Link to="/blog" onClick={this.props.menuClickHandler}>
@@ -63,6 +50,19 @@ export class MainMenu extends React.Component {
                         >
                             Work with us
                         </Link>
+                    </li>
+
+                    <li className="main-nav-menu-list-item">
+                        <div className="subnav">
+                        <Link to="/about" onClick={this.props.menuClickHandler}>
+                            About  us   <i class="fa fa-caret-down"></i></Link>
+                            <div className="subnav-content">
+                                <a href="/about#about">Who we are</a>
+                                {/* <a href="#ceo">TOlindo CEO</a> */}
+                                <a href="/about#faq">TOlindo FAQs</a>
+                                <a href="/about#contact">Contact us</a>
+                            </div>
+                        </div> 
                     </li>
                 </ul>
             </nav>

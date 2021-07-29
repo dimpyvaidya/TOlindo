@@ -68,6 +68,44 @@ html {
     padding: 8px 40px;
 }
 
+.subnav {
+    float: left;
+    overflow: hidden;
+    
+  }
+  
+.subnav .subnavbtn {
+    font-size: 22px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 7px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    /* display: none; */
+}
+
+.subnav-content {
+display: block;
+position: absolute;
+width: 100%;
+z-index: 1;
+}
+
+.subnav-content a {
+color: var(--text-default-color);
+text-decoration: none;
+}
+
+.subnav-content a {
+    background-color: white;
+    color: var(--text-default-color);
+    }
+    
+.subnav:hover .subnav-content {
+    display: block;
+    } 
 
 @media (min-width: 1024px) {
     .main-nav {
@@ -100,15 +138,15 @@ html {
       }
       
     .subnav .subnavbtn {
-    font-size: 22px;  
-    border: none;
-    outline: none;
-    color: white;
-    padding: 7px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-    /* display: none; */
+        font-size: 22px;  
+        border: none;
+        outline: none;
+        color: white;
+        padding: 7px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+        /* display: none; */
     }
     
     .subnav-content {
