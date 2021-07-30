@@ -58,7 +58,7 @@ export class MainMenu extends React.Component {
                             About  us   <i class="fa fa-caret-down"></i></Link>
                             <div className="subnav-content">
                                 <a href="/about#about">Who we are</a>
-                                {/* <a href="#ceo">TOlindo CEO</a> */}
+                                <a href="#ceo">TOlindo CEO</a>
                                 <a href="/about#faq">TOlindo FAQs</a>
                                 <a href="/about#contact">Contact us</a>
                             </div>

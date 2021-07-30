@@ -70,8 +70,7 @@ html {
 
 .subnav {
     float: left;
-    overflow: hidden;
-    
+    overflow: hidden; 
   }
   
 .subnav .subnavbtn {
@@ -87,25 +86,20 @@ html {
 }
 
 .subnav-content {
-display: block;
-position: absolute;
-width: 100%;
-z-index: 1;
+    display: block;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
 }
 
 .subnav-content a {
-color: var(--text-default-color);
-text-decoration: none;
-}
-
-.subnav-content a {
-    background-color: white;
+    /* background-color: white; */
     color: var(--text-default-color);
-    }
+}
     
 .subnav:hover .subnav-content {
     display: block;
-    } 
+} 
 
 @media (min-width: 1024px) {
     .main-nav {
@@ -134,7 +128,6 @@ text-decoration: none;
     .subnav {
         float: left;
         overflow: hidden;
-        
       }
       
     .subnav .subnavbtn {
@@ -150,23 +143,23 @@ text-decoration: none;
     }
     
     .subnav-content {
-    display: none;
-    position: absolute;
-    width: 18%;
-    z-index: 1;
+        display: none;
+        position: absolute;
+        width: 18%;
+        z-index: 1;
     }
     
     .subnav-content a {
-    color: white;
-    text-decoration: none;
+        color: var(--text-default-color);
+        text-decoration: none;
     }
     
     .subnav-content a:active {
-    background-color: #eee;
-    color: black;
+        /* background-color: #eee; */
+        color: black;
     }
     
     .subnav:hover .subnav-content {
-    display: block;
+        display: block;
     } 
 }
